@@ -1,0 +1,28 @@
+<h1>Listing restaurents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @restaurents.each do |restaurent| %>
+      <tr>
+        <td>Restaurent Name <%=  %></td>
+        <td>Review count <%= %></td>
+        <td>Latitude <%=  %></td>
+        <td>Longitude <%=  %></td>
+        <td>City <%=  %></td>
+        <td>State <%=  %></td>
+        <td>Zip code <%=  %></td>
+        <td>Avg Rating <%=  %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Restaurent', new_restaurent_path %>
